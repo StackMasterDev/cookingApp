@@ -1,0 +1,122 @@
+.header {
+  background: linear-gradient(135deg, #fff5f5 0%, #f8b4b4 50%, #c53030 100%);
+  color: #4a1c1c;
+  padding: 1rem 0;
+  box-shadow: 0 4px 12px rgba(197, 48, 48, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: #4a1c1c;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLink {
+  color: #4a1c1c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #8b0000;
+}
+
+.registerButton {
+  background: #ffebeb;
+  color: #8b0000;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.registerButton:hover {
+  background: #ffd6d6;
+  transform: scale(1.05);
+}
+
+.logoutButton {
+  background: #ffeaea;
+  color: #8b0000;
+  border: 1px solid #ffcccc;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.logoutButton:hover {
+  background: #ffd6d6;
+  transform: scale(1.05);
+}
+
+.menuButton {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menuButton span {
+  width: 25px;
+  height: 3px;
+  background: #4a1c1c;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #fff5f5 0%, #f8b4b4 50%, #c53030 100%);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}

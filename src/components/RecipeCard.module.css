@@ -1,0 +1,163 @@
+.card {
+  background: #fffaf4;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(180, 120, 80, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(180, 120, 80, 0.2);
+}
+
+.imageContainer {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.06);
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.emotionBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #a0522d;
+  padding: 0.4rem 0.9rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  padding: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.title {
+  margin: 0 0 0.8rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #6b3e26;
+}
+
+.author {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #a67c52;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.category {
+  background: #ffe0b5;
+  color: #6b3e26;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.emotionNote {
+  background: #fff3e0;
+  color: #a0522d;
+  padding: 0.9rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #a67c52;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.likeButton,
+.viewButton {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.likeButton {
+  background: #ffe8d6;
+  color: #6b3e26;
+  border: 1px solid #f3cbb3;
+}
+
+.likeButton:hover {
+  background: #fdd9b5;
+}
+
+.likeButton.liked {
+  background: #ff9e80;
+  color: white;
+  border-color: #ff7043;
+}
+
+.likeButton.liked:hover {
+  background: #ff7043;
+}
+
+.viewButton {
+  background: #ffb74d;
+  color: white;
+  border: 1px solid #ffa726;
+}
+
+.viewButton:hover {
+  background: #fb8c00;
+  border-color: #f57c00;
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "categoryName": "Main Course",
+        "categoryImage": "/main-course.png"
+    },
+    {
+        "id": "2",
+        "categoryName": "Soup",
+        "categoryImage": "/soup.png"
+    },
+    {
+        "id": "3",
+        "categoryName": "Salad",
+        "categoryImage": "/salad.png"
+    },
+    {
+        "id": "4",
+        "categoryName": "Dessert",
+        "categoryImage": "/dessert.png"
+    },
+    {
+        "id": "5",
+        "categoryName": "Breakfast",
+        "categoryImage": "/breakfast.png"
+    }
+]

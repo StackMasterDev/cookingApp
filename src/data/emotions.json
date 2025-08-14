@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "emotionName": "Longing",
+        "icon": "🏠"
+    },
+    {
+        "id": "2",
+        "emotionName": "Joy",
+        "icon": "😊"
+    },
+    {
+        "id": "3",
+        "emotionName": "Sadness",
+        "icon": "😢"
+    },
+    {
+        "id": "4",
+        "emotionName": "Excitement",
+        "icon": "🎉"
+    },
+    {
+        "id": "5",
+        "emotionName": "Calmness",
+        "icon": "😌"
+    }
+]
